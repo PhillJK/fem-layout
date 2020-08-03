@@ -34,10 +34,71 @@ div img {
 
 
 /* Mobile Landscape Screen Sizes */
-@media only screen and (min-width: 480px)  {
+@media only screen and (min-width: 375px), (max-width: 475px) {
+	.row1 article {
+		background-color: rgb(235, 211, 101);
+		width: 100%;
+	}
+	.row2 article {
+		width: 100%;
+		background-color: rgb(116, 248, 231);
+	}
+	.row3 article {
+		width: 100%;
+		background-color: #acdb61;
+	}
+	.row4 article {
+		width: 100%;
+		background-color: #d16274;
+	}
 
 }
+
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
-
+	.row1 {
+		width: 100%;
+		overflow: auto;
+	}
+	.row1 article {
+		width: 24%;
+		margin: .5%;
+		float: left;
+		background-color: rgb(235, 211, 101);
+	}
+	.row1::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	.row2 {
+		width: 100%;
+	}
+	.row2 article {
+		background-color: rgb(116, 248, 231);
+	}
+	.row3 {
+		width: 100%;
+		overflow: auto; 
+	}
+	.row3 article {
+		margin: .5%;
+		float: left;
+		background-color: #acdb61;
+	}
+	.row3 .article1 {
+		width: 24%;
+	}
+	.row3 .article2 {
+		width: 74%;
+	}
+	.row3::after {
+		content: "";
+		clear:both;
+		display: table;
+	}
+	.row4 {
+		width: 100%;
+		background-color: #d16274;
+	}
 }
