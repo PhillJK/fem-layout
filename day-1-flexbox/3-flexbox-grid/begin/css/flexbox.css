@@ -39,5 +39,68 @@ div img {
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
+/* common properties */
+.row-1, .row-2, .row-3, .row-4, .row-5 {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 1%;
+}
+.col-1, .col-1-1, .col-1-2, .col-12, .col-1-2-1 {
+	display: flex;
+	flex-flow: column wrap;
+	margin: 0 1%;
+	padding: 1%;
+	border-radius: 15px;
+}
+.col img, .col h3 {
+	align-self: center;
+}
 
+/* col-1 */
+.row-1 {
+	margin-top: 1%;
+}
+.col-1 {
+	flex: 1 1 20%;	
+	background-color: #ccf;
+}
+
+/* col-1-1 */
+.col-1-1 {
+	flex: 1 0 48%;
+	background-color: #cff;
+}
+
+/* col-1-2 */
+.col-1-2 {
+	background-color: #ffc;
+}
+.article1 {
+	flex: 1 0 21%;
+}
+.article2 {
+	flex: 2 0 75%;
+}
+
+/* col-12 */
+.col-12 {
+	background-color: #cfc;
+	flex: 1 0 98%;
+}
+
+/* col-1-2-1 */
+.row-5{
+	flex-wrap: wrap;
+}
+.article3 {
+	order: 1;
+	flex: 1 0 48%;
+	background-color: #cfc;
+	margin-top: 1%;
+}
+.article4 {
+	order: 0;
+	flex: 1 0 98%;
+	background-color: #cff;
+}
 }
