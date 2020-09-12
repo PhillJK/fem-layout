@@ -2,23 +2,27 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 body {
-	font-family: "Cabin", Arial, Geneva, sans-serif;
-	background-image: url(../img/clouds.png);
-	margin: 0px;
-	padding: 0px;
+  font-family: "Cabin", Arial, Geneva, sans-serif;
+  background-image: url(../img/clouds.png);
+  margin: 0px;
+  padding: 0px;
 }
-h1,h2,h3 {
-  font-family: 'Niconne', cursive;
+h1,
+h2,
+h3 {
+  font-family: "Niconne", cursive;
   font-weight: normal;
-  color: #C80060;
+  color: #c80060;
   margin-top: 0;
 }
 .wrapper {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 article img {
   border-radius: 10px;
@@ -31,12 +35,12 @@ img.responsive {
 }
 .bkgdimg {
   height: 12px;
-    background: url(../img/scallop.png) repeat-x ;
+  background: url(../img/scallop.png) repeat-x;
 }
 nav ul {
   list-style-type: none;
-  background-color: #e6bf98; 
-  padding: .75em;
+  background-color: #e6bf98;
+  padding: 0.75em;
   margin: 0;
   border-bottom: 3px solid #cc8850;
   overflow: auto;
@@ -51,19 +55,19 @@ nav li:nth-child(even) {
 nav li:nth-child(odd) {
   width: 50%;
   float: left;
-    padding: 0.5em;
+  padding: 0.5em;
 }
 nav a {
   color: #c80060;
   text-decoration: none;
   display: block;
-  padding-left:3.333333%;
+  padding-left: 3.333333%;
 }
 nav a:hover {
-  color:#00c4c7;
+  color: #00c4c7;
 }
 /* add gallery class */
-.content, 
+.content,
 .gallery,
 .home {
   background-color: #fff6e0;
@@ -81,8 +85,8 @@ nav a:hover {
 .gallery li {
   flex: auto;
 }
-.gallery img { 
-  width: 100%; 
+.gallery img {
+  width: 100%;
   border-radius: 10px;
 }
 .floatleft {
@@ -93,12 +97,12 @@ nav a:hover {
   float: right;
   margin: 0 0 1em 1em;
 }
-[class*='sidebar'] {
+[class*="sidebar"] {
   border: 1px solid #00c4c7;
   border-radius: 10px;
   margin: 3em 0;
 }
-[class*='sidebar'] h3 {
+[class*="sidebar"] h3 {
   margin: 0;
   color: white;
   background-color: #00c4c7;
@@ -106,12 +110,12 @@ nav a:hover {
   border-top-right-radius: 10px;
   padding-left: 0.5em;
 }
-[class*='sidebar'] img {
+[class*="sidebar"] img {
   border-radius: 0px 0px 10px 10px;
   width: 100%;
   max-width: 250px;
   display: block; /* without this, there is a gap between the image and border -- space for descenders in text, for inline elements */
-} 
+}
 .sidebar-secondary {
   border-color: #c80060;
 }
@@ -122,7 +126,7 @@ blockquote {
   padding: 0em;
   margin: 0;
 }
-blockquote p, 
+blockquote p,
 blockquote cite {
   padding: 0 1em;
 }
@@ -133,7 +137,7 @@ blockquote cite {
   display: block;
 }
 footer {
-  background-color: #00CDD1;
+  background-color: #00cdd1;
   color: white;
   clear: both;
   margin: 0 0.5em 3em 0.5em;
@@ -199,27 +203,29 @@ textarea {
   height: 15em;
   margin-bottom: 1em;
 }
-button, .button {
+button,
+.button {
   margin-bottom: 2em;
   background-color: #c80060;
   color: white;
   font-size: 1.5em;
   border-radius: 30px;
   text-decoration: none;
-  font-family: 'Niconne', cursive;
+  font-family: "Niconne", cursive;
   padding: 0.2em 0.5em;
 }
-button:hover, .button:hover {
-  background-color: #AD0054;
+button:hover,
+.button:hover {
+  background-color: #ad0054;
 }
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 550px) { 
+@media (min-width: 550px) {
   .wrapper {
-      width: 97%;
-      max-width: 767px;
+    width: 97%;
+    max-width: 767px;
   }
 
- nav li,
+  nav li,
   nav li:nth-child(even),
   nav li:nth-child(odd) {
     display: inline-block;
@@ -229,7 +235,6 @@ button:hover, .button:hover {
   }
   nav a {
     padding: 0em 1em;
-
   }
   .heading {
     background: url(../img/header-850.jpg) no-repeat;
@@ -257,11 +262,11 @@ button:hover, .button:hover {
   }
 }
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 850px) { 
+@media (min-width: 850px) {
   .wrapper {
-      width: 97%;
-      max-width: 1200px;
-      float: none;
+    width: 97%;
+    max-width: 1200px;
+    float: none;
   }
   h2 {
     font-size: 3em;
@@ -281,8 +286,8 @@ button:hover, .button:hover {
     padding: 0;
   }
   .content {
-       grid-template-columns: 3fr 1fr;
-       grid-gap: 3em;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 3em;
   }
   .homeboxes {
     display: grid;
@@ -296,5 +301,4 @@ button:hover, .button:hover {
     background: url(../img/header-1200.jpg) no-repeat;
     height: 183px;
   }
-
 }

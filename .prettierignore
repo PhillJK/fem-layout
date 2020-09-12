@@ -1,0 +1,10 @@
+*.pdf
+*.txt
+*.jpg
+*.png
+*.zip
+node_modules/
+branding/
+.gitignore
+.prettierignore
+.prettierrc
